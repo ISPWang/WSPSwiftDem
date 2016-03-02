@@ -24,11 +24,12 @@
                         <segue destination="mps-S1-onj" kind="show" identifier="Demo1ViewControllerIdentifier" id="IdB-W6-0bL"/>
                         <segue destination="p6a-1C-k5a" kind="show" identifier="ChangeFontViewControllerIdentifier" id="rjQ-k5-5uQ"/>
                         <segue destination="SFi-oV-o06" kind="show" identifier="PlayLocalVedioIdentifier" id="aX3-b8-A86"/>
+                        <segue destination="7fs-A3-YMP" kind="show" identifier="ChatVideoMenuIdentifier" id="TJ9-XB-251"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="302" y="261"/>
+            <point key="canvasLocation" x="56" y="629"/>
         </scene>
         <!--Demo1 View Controller-->
         <scene sceneID="bPE-FU-9u6">
@@ -115,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kjM-WW-mEd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1184" y="-1031"/>
+            <point key="canvasLocation" x="1170" y="-1232"/>
         </scene>
         <!--Demo2 Change Font View Controller-->
         <scene sceneID="uKA-ge-dz0">
@@ -185,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zLt-x3-DT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1136" y="-208"/>
+            <point key="canvasLocation" x="1170" y="-583"/>
         </scene>
         <!--Demo3 Play Local Vedio Controller-->
         <scene sceneID="Ax0-wi-Rd8">
@@ -282,7 +283,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vWg-Vc-ALb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1136" y="447"/>
+            <point key="canvasLocation" x="1170" y="88"/>
+        </scene>
+        <!--Chat Video Menu View Controller-->
+        <scene sceneID="VFL-HF-CLc">
+            <objects>
+                <viewController id="7fs-A3-YMP" customClass="ChatVideoMenuViewController" customModule="swiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YDU-Bq-Vdb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jt0-x9-BSv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JYb-6x-u2b">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfr-kM-tt8">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sfr-kM-tt8" firstAttribute="top" secondItem="JYb-6x-u2b" secondAttribute="top" id="ObT-dP-coY"/>
+                            <constraint firstItem="Jt0-x9-BSv" firstAttribute="top" secondItem="sfr-kM-tt8" secondAttribute="bottom" id="mSZ-ml-nhA"/>
+                            <constraint firstItem="sfr-kM-tt8" firstAttribute="leading" secondItem="JYb-6x-u2b" secondAttribute="leading" id="oSa-wa-fT5"/>
+                            <constraint firstAttribute="trailing" secondItem="sfr-kM-tt8" secondAttribute="trailing" id="wXt-80-h9D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="sfr-kM-tt8" id="tnF-Le-Ju6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UB3-ju-E6A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170" y="766"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Lc-Kh-AIl">
@@ -300,7 +333,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uF9-el-FTr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-502" y="261"/>
+            <point key="canvasLocation" x="-628" y="629"/>
         </scene>
     </scenes>
     <resources>

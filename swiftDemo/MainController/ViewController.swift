@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var data = ["tableSectionHeader", "timerPlayOrPause", "CustomerChangeFont", "PlayLocalVideo"]
+    var data = ["tableSectionHeader", "timerPlayOrPause", "CustomerChangeFont", "PlayLocalVideo", "ChatVideoMenuViewController"]
     
     var showTable: UITableView?
     
@@ -52,6 +52,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             performSegueWithIdentifier("ChangeFontViewControllerIdentifier", sender: nil)
         } else if indexPath.row == 3 {
             performSegueWithIdentifier("PlayLocalVedioIdentifier", sender: nil)
+        } else if indexPath.row == 4 {
+            performSegueWithIdentifier("ChatVideoMenuIdentifier", sender: nil)
         }
         
     }
