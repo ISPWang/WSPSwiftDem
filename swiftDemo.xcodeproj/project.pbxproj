@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C8C9E7EC80EEA229046A8751 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACF77939C0ABE2D5B5DBE16 /* libPods.a */; };
+		89E2FDD10C0341B729E2D3A9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43394BDB3ACD683175E0A5A9 /* Pods.framework */; };
 		C943545B1C472D64003C4B8D /* swiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943545A1C472D64003C4B8D /* swiftDemoTests.swift */; };
 		C94354661C472D64003C4B8D /* swiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94354651C472D64003C4B8D /* swiftDemoUITests.swift */; };
 		C9474FDE1C86837000CFADA0 /* ChatVideoMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9474FDD1C86837000CFADA0 /* ChatVideoMenuViewController.swift */; };
 		C9474FE01C86837E00CFADA0 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9474FDF1C86837E00CFADA0 /* LeftViewController.swift */; };
 		C9474FE21C86838700CFADA0 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9474FE11C86838700CFADA0 /* RightViewController.swift */; };
 		C9474FE41C86839400CFADA0 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9474FE31C86839400CFADA0 /* CameraViewController.swift */; };
+		C9474FE71C86CBB100CFADA0 /* ShareStyleDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9474FE61C86CBB100CFADA0 /* ShareStyleDemoViewController.swift */; };
 		C94BC2DA1C85264000C79FDB /* emoji zone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C94BC2D91C85264000C79FDB /* emoji zone.mp4 */; };
 		C94BC2DC1C85275100C79FDB /* Demo3PlayLocalVedioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94BC2DB1C85275100C79FDB /* Demo3PlayLocalVedioController.swift */; };
 		C94BC2DE1C85277200C79FDB /* PlayVedioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94BC2DD1C85277200C79FDB /* PlayVedioCell.swift */; };
@@ -72,7 +73,7 @@
 
 /* Begin PBXFileReference section */
 		29BAB198193F82DE77530D32 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		6ACF77939C0ABE2D5B5DBE16 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		43394BDB3ACD683175E0A5A9 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94354421C472D64003C4B8D /* swiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94354561C472D64003C4B8D /* swiftDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C943545A1C472D64003C4B8D /* swiftDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftDemoTests.swift; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 		C9474FDF1C86837E00CFADA0 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		C9474FE11C86838700CFADA0 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 		C9474FE31C86839400CFADA0 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		C9474FE61C86CBB100CFADA0 /* ShareStyleDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareStyleDemoViewController.swift; sourceTree = "<group>"; };
 		C94BC2D91C85264000C79FDB /* emoji zone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "emoji zone.mp4"; sourceTree = "<group>"; };
 		C94BC2DB1C85275100C79FDB /* Demo3PlayLocalVedioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo3PlayLocalVedioController.swift; sourceTree = "<group>"; };
 		C94BC2DD1C85277200C79FDB /* PlayVedioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayVedioCell.swift; sourceTree = "<group>"; };
@@ -137,7 +139,7 @@
 			files = (
 				C94BC3141C85430E00C79FDB /* libSDWebImage.a in Frameworks */,
 				C94BC3121C85430800C79FDB /* ImageIO.framework in Frameworks */,
-				C8C9E7EC80EEA229046A8751 /* libPods.a in Frameworks */,
+				89E2FDD10C0341B729E2D3A9 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +176,7 @@
 				C94BC3111C85430800C79FDB /* ImageIO.framework */,
 				C9B10ED01C60B11A007F3C8A /* SnapKit.framework */,
 				C9B10ECE1C60B0D7007F3C8A /* SDWebImage.framework */,
-				6ACF77939C0ABE2D5B5DBE16 /* libPods.a */,
+				43394BDB3ACD683175E0A5A9 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,6 +206,7 @@
 		C94354441C472D64003C4B8D /* swiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C9474FE51C86CB8E00CFADA0 /* ShareStyleDemo */,
 				C9474FDC1C86834A00CFADA0 /* ChatViewMedioView */,
 				C94BC2DF1C853E8A00C79FDB /* ChangeFontDemo */,
 				C94BC2E71C853E8A00C79FDB /* MainController */,
@@ -243,6 +246,14 @@
 				C9474FE31C86839400CFADA0 /* CameraViewController.swift */,
 			);
 			path = ChatViewMedioView;
+			sourceTree = "<group>";
+		};
+		C9474FE51C86CB8E00CFADA0 /* ShareStyleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C9474FE61C86CBB100CFADA0 /* ShareStyleDemoViewController.swift */,
+			);
+			path = ShareStyleDemo;
 			sourceTree = "<group>";
 		};
 		C94BC2D81C85264000C79FDB /* PlayLocalVedio */ = {
@@ -545,6 +556,7 @@
 				C9B10EEB1C60B2C7007F3C8A /* LayoutConstraint.swift in Sources */,
 				C9B10EE91C60B2C7007F3C8A /* EdgeInsets.swift in Sources */,
 				C94BC3041C853E8A00C79FDB /* hekllo.m in Sources */,
+				C9474FE71C86CBB100CFADA0 /* ShareStyleDemoViewController.swift in Sources */,
 				C9B10EE41C60B2C7007F3C8A /* ConstraintDescription.swift in Sources */,
 				C94BC30D1C853E8A00C79FDB /* ECGMineViewController.swift in Sources */,
 				C94BC30B1C853E8A00C79FDB /* ECGBaseViewController.swift in Sources */,
