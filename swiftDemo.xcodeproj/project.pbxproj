@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		89E2FDD10C0341B729E2D3A9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43394BDB3ACD683175E0A5A9 /* Pods.framework */; };
+		C93E75C71C881681006916FB /* PhotoEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E75C61C881681006916FB /* PhotoEffectViewController.swift */; };
+		C93E75C91C8816AD006916FB /* InsertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E75C81C8816AD006916FB /* InsertCollectionViewCell.swift */; };
+		C93E75CB1C8816C3006916FB /* InsertClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E75CA1C8816C3006916FB /* InsertClass.swift */; };
 		C943545B1C472D64003C4B8D /* swiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943545A1C472D64003C4B8D /* swiftDemoTests.swift */; };
 		C94354661C472D64003C4B8D /* swiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94354651C472D64003C4B8D /* swiftDemoUITests.swift */; };
 		C9474FDE1C86837000CFADA0 /* ChatVideoMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9474FDD1C86837000CFADA0 /* ChatVideoMenuViewController.swift */; };
@@ -74,6 +77,9 @@
 /* Begin PBXFileReference section */
 		29BAB198193F82DE77530D32 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		43394BDB3ACD683175E0A5A9 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C93E75C61C881681006916FB /* PhotoEffectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoEffectViewController.swift; sourceTree = "<group>"; };
+		C93E75C81C8816AD006916FB /* InsertCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertCollectionViewCell.swift; sourceTree = "<group>"; };
+		C93E75CA1C8816C3006916FB /* InsertClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertClass.swift; sourceTree = "<group>"; };
 		C94354421C472D64003C4B8D /* swiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94354561C472D64003C4B8D /* swiftDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C943545A1C472D64003C4B8D /* swiftDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftDemoTests.swift; sourceTree = "<group>"; };
@@ -181,6 +187,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C93E75C51C880CED006916FB /* PhottoEffect */ = {
+			isa = PBXGroup;
+			children = (
+				C93E75C61C881681006916FB /* PhotoEffectViewController.swift */,
+				C93E75C81C8816AD006916FB /* InsertCollectionViewCell.swift */,
+				C93E75CA1C8816C3006916FB /* InsertClass.swift */,
+			);
+			path = PhottoEffect;
+			sourceTree = "<group>";
+		};
 		C94354391C472D64003C4B8D = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +222,7 @@
 		C94354441C472D64003C4B8D /* swiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C93E75C51C880CED006916FB /* PhottoEffect */,
 				C9474FE51C86CB8E00CFADA0 /* ShareStyleDemo */,
 				C9474FDC1C86834A00CFADA0 /* ChatViewMedioView */,
 				C94BC2DF1C853E8A00C79FDB /* ChangeFontDemo */,
@@ -538,6 +555,7 @@
 				C9B10EEC1C60B2C7007F3C8A /* SnapKit.swift in Sources */,
 				C9474FE01C86837E00CFADA0 /* LeftViewController.swift in Sources */,
 				C9B10EE51C60B2C7007F3C8A /* ConstraintItem.swift in Sources */,
+				C93E75C91C8816AD006916FB /* InsertCollectionViewCell.swift in Sources */,
 				C94BC2DC1C85275100C79FDB /* Demo3PlayLocalVedioController.swift in Sources */,
 				C9B10EEE1C60B2C7007F3C8A /* View+SnapKit.swift in Sources */,
 				C9B10EE81C60B2C7007F3C8A /* Debugging.swift in Sources */,
@@ -550,9 +568,11 @@
 				C94BC30A1C853E8A00C79FDB /* ECGBaseSettingViewController.swift in Sources */,
 				C9B10EE61C60B2C7007F3C8A /* ConstraintMaker.swift in Sources */,
 				C9474FE21C86838700CFADA0 /* RightViewController.swift in Sources */,
+				C93E75C71C881681006916FB /* PhotoEffectViewController.swift in Sources */,
 				C94BC3031C853E8A00C79FDB /* AppDelegate.swift in Sources */,
 				C9B10EED1C60B2C7007F3C8A /* SourceLocation.swift in Sources */,
 				C9B10EE21C60B2C7007F3C8A /* Constraint.swift in Sources */,
+				C93E75CB1C8816C3006916FB /* InsertClass.swift in Sources */,
 				C9B10EEB1C60B2C7007F3C8A /* LayoutConstraint.swift in Sources */,
 				C9B10EE91C60B2C7007F3C8A /* EdgeInsets.swift in Sources */,
 				C94BC3041C853E8A00C79FDB /* hekllo.m in Sources */,
