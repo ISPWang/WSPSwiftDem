@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var data = ["tableSectionHeader", "timerPlayOrPause", "CustomerChangeFont", "PlayLocalVideo", "ChatVideoMenuViewController", "ShareStyle", "PhottoEffect"]
+    var data = ["tableSectionHeader", "timerPlayOrPause", "CustomerChangeFont", "PlayLocalVideo", "ChatVideoMenuViewController", "ShareStyle", "PhottoEffect", "PullToRefreshController"]
     
     var showTable: UITableView?
     
@@ -60,6 +60,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else if indexPath.row == 6 {
             print("Log\(indexPath)")
             performSegueWithIdentifier("PhotoEffectIdentifier", sender: nil)
+        } else if indexPath.row == 7 {
+            let pullRefresh = PullToRefreshController()
+            self.navigationController!.pushViewController(pullRefresh, animated: true)
         }
         
     }

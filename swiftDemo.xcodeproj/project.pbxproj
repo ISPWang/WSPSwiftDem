@@ -55,6 +55,7 @@
 		C9B10EED1C60B2C7007F3C8A /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B10EDF1C60B2C7007F3C8A /* SourceLocation.swift */; };
 		C9B10EEE1C60B2C7007F3C8A /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B10EE01C60B2C7007F3C8A /* View+SnapKit.swift */; };
 		C9B10EEF1C60B2C7007F3C8A /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B10EE11C60B2C7007F3C8A /* ViewController+SnapKit.swift */; };
+		C9F56B041C8D68540009D557 /* PullToRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F56B031C8D68540009D557 /* PullToRefreshController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,7 @@
 		C9B10EDF1C60B2C7007F3C8A /* SourceLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceLocation.swift; sourceTree = "<group>"; };
 		C9B10EE01C60B2C7007F3C8A /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
 		C9B10EE11C60B2C7007F3C8A /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
+		C9F56B031C8D68540009D557 /* PullToRefreshController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefreshController.swift; sourceTree = "<group>"; };
 		D0821EF2DFA7373D4FE191C8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -222,6 +224,7 @@
 		C94354441C472D64003C4B8D /* swiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C9F56B021C8D68250009D557 /* pullToRefresh */,
 				C93E75C51C880CED006916FB /* PhottoEffect */,
 				C9474FE51C86CB8E00CFADA0 /* ShareStyleDemo */,
 				C9474FDC1C86834A00CFADA0 /* ChatViewMedioView */,
@@ -359,6 +362,14 @@
 				C9B10EE11C60B2C7007F3C8A /* ViewController+SnapKit.swift */,
 			);
 			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		C9F56B021C8D68250009D557 /* pullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				C9F56B031C8D68540009D557 /* PullToRefreshController.swift */,
+			);
+			path = pullToRefresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -583,6 +594,7 @@
 				C9474FDE1C86837000CFADA0 /* ChatVideoMenuViewController.swift in Sources */,
 				C94BC30E1C853E8A00C79FDB /* ECGSettingGroup.swift in Sources */,
 				C94BC30C1C853E8A00C79FDB /* ECGMineSettingCell.swift in Sources */,
+				C9F56B041C8D68540009D557 /* PullToRefreshController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
