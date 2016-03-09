@@ -13,6 +13,8 @@
 		C93E75CB1C8816C3006916FB /* InsertClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E75CA1C8816C3006916FB /* InsertClass.swift */; };
 		C943545B1C472D64003C4B8D /* swiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C943545A1C472D64003C4B8D /* swiftDemoTests.swift */; };
 		C94354661C472D64003C4B8D /* swiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94354651C472D64003C4B8D /* swiftDemoUITests.swift */; };
+		C94560A21C8FFF4500B0DD11 /* Ecstasy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C94560A11C8FFF4500B0DD11 /* Ecstasy.mp3 */; };
+		C94560A41C8FFF7F00B0DD11 /* RandomGradientMusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94560A31C8FFF7F00B0DD11 /* RandomGradientMusicController.swift */; };
 		C9474FDE1C86837000CFADA0 /* ChatVideoMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9474FDD1C86837000CFADA0 /* ChatVideoMenuViewController.swift */; };
 		C9474FE01C86837E00CFADA0 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9474FDF1C86837E00CFADA0 /* LeftViewController.swift */; };
 		C9474FE21C86838700CFADA0 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9474FE11C86838700CFADA0 /* RightViewController.swift */; };
@@ -88,6 +90,8 @@
 		C94354611C472D64003C4B8D /* swiftDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94354651C472D64003C4B8D /* swiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftDemoUITests.swift; sourceTree = "<group>"; };
 		C94354671C472D64003C4B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C94560A11C8FFF4500B0DD11 /* Ecstasy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ecstasy.mp3; sourceTree = "<group>"; };
+		C94560A31C8FFF7F00B0DD11 /* RandomGradientMusicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomGradientMusicController.swift; sourceTree = "<group>"; };
 		C9474FDD1C86837000CFADA0 /* ChatVideoMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVideoMenuViewController.swift; sourceTree = "<group>"; };
 		C9474FDF1C86837E00CFADA0 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		C9474FE11C86838700CFADA0 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +228,7 @@
 		C94354441C472D64003C4B8D /* swiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C94560A01C8FFF4500B0DD11 /* RandomGradientColorMusic */,
 				C9F56B021C8D68250009D557 /* pullToRefresh */,
 				C93E75C51C880CED006916FB /* PhottoEffect */,
 				C9474FE51C86CB8E00CFADA0 /* ShareStyleDemo */,
@@ -255,6 +260,15 @@
 				C94354671C472D64003C4B8D /* Info.plist */,
 			);
 			path = swiftDemoUITests;
+			sourceTree = "<group>";
+		};
+		C94560A01C8FFF4500B0DD11 /* RandomGradientColorMusic */ = {
+			isa = PBXGroup;
+			children = (
+				C94560A11C8FFF4500B0DD11 /* Ecstasy.mp3 */,
+				C94560A31C8FFF7F00B0DD11 /* RandomGradientMusicController.swift */,
+			);
+			path = RandomGradientColorMusic;
 			sourceTree = "<group>";
 		};
 		C9474FDC1C86834A00CFADA0 /* ChatViewMedioView */ = {
@@ -486,6 +500,7 @@
 				C94BC3001C853E8A00C79FDB /* MFJinHei_Noncommercial-Regular.ttf in Resources */,
 				C94BC3061C853E8A00C79FDB /* Assets.xcassets in Resources */,
 				C94BC3081C853E8A00C79FDB /* Main.storyboard in Resources */,
+				C94560A21C8FFF4500B0DD11 /* Ecstasy.mp3 in Resources */,
 				C94BC2FF1C853E8A00C79FDB /* Gaspar Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +603,7 @@
 				C9B10EE91C60B2C7007F3C8A /* EdgeInsets.swift in Sources */,
 				C94BC3041C853E8A00C79FDB /* hekllo.m in Sources */,
 				C9474FE71C86CBB100CFADA0 /* ShareStyleDemoViewController.swift in Sources */,
+				C94560A41C8FFF7F00B0DD11 /* RandomGradientMusicController.swift in Sources */,
 				C9B10EE41C60B2C7007F3C8A /* ConstraintDescription.swift in Sources */,
 				C94BC30D1C853E8A00C79FDB /* ECGMineViewController.swift in Sources */,
 				C94BC30B1C853E8A00C79FDB /* ECGBaseViewController.swift in Sources */,

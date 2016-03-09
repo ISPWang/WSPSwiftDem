@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var data = ["tableSectionHeader", "timerPlayOrPause", "CustomerChangeFont", "PlayLocalVideo", "ChatVideoMenuViewController", "ShareStyle", "PhottoEffect", "PullToRefreshController"]
+    var data = ["tableSectionHeader", "timerPlayOrPause", "CustomerChangeFont", "PlayLocalVideo", "ChatVideoMenuViewController", "ShareStyle", "PhottoEffect", "PullToRefreshController", "RandomGradientColorMusic"]
     
     var showTable: UITableView?
     
@@ -63,6 +63,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else if indexPath.row == 7 {
             let pullRefresh = PullToRefreshController()
             self.navigationController!.pushViewController(pullRefresh, animated: true)
+        } else if indexPath.row == 8 {
+            performSegueWithIdentifier("RandomGradientMusicIndentifier", sender: nil)
         }
         
     }

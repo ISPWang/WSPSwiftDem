@@ -26,6 +26,7 @@
                         <segue destination="SFi-oV-o06" kind="show" identifier="PlayLocalVedioIdentifier" id="aX3-b8-A86"/>
                         <segue destination="7fs-A3-YMP" kind="show" identifier="ChatVideoMenuIdentifier" id="TJ9-XB-251"/>
                         <segue destination="N6H-zI-ZkB" kind="show" identifier="PhotoEffectIdentifier" id="jWc-QN-DdZ"/>
+                        <segue destination="4ef-Jz-zAT" kind="show" identifier="RandomGradientMusicIndentifier" id="XGX-wl-1Yz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -458,6 +459,37 @@
             </objects>
             <point key="canvasLocation" x="1170" y="1444"/>
         </scene>
+        <!--Random Gradient Music Controller-->
+        <scene sceneID="EAo-Fm-bga">
+            <objects>
+                <viewController id="4ef-Jz-zAT" customClass="RandomGradientMusicController" customModule="swiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m6y-DA-ddB"/>
+                        <viewControllerLayoutGuide type="bottom" id="hDb-tR-OdC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zvR-4G-ovv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7VT-5c-Ir9">
+                                <rect key="frame" x="226" y="226" width="148" height="148"/>
+                                <state key="normal" image="music play"/>
+                                <connections>
+                                    <action selector="randomButtonClick:" destination="4ef-Jz-zAT" eventType="touchUpInside" id="pnS-GP-awH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1764705882352941" green="0.0" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7VT-5c-Ir9" firstAttribute="centerY" secondItem="zvR-4G-ovv" secondAttribute="centerY" id="38v-ID-rg4"/>
+                            <constraint firstItem="7VT-5c-Ir9" firstAttribute="centerX" secondItem="zvR-4G-ovv" secondAttribute="centerX" id="BeI-0m-u1O"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l2u-eQ-Pse" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170" y="2107"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Lc-Kh-AIl">
             <objects>
@@ -480,6 +512,7 @@
     <resources>
         <image name="blue" width="375" height="667"/>
         <image name="bodyline" width="596" height="595"/>
+        <image name="music play" width="148" height="148"/>
         <image name="playBtn" width="60" height="60"/>
         <image name="videoScreenshot01" width="375" height="220"/>
     </resources>

@@ -6,9 +6,9 @@
 ` 嵌套按钮多点击效果`
 ##### Demo样式截图
 
-<img src="https://github.com/ISPWang/WSPSwiftDemo/raw/master/ScreenShots/tableViewSection.png" alt="Drawing" width="200px" />
-<img src="https://github.com/ISPWang/WSPSwiftDemo/raw/master/ScreenShots/playLocalVideo.png" alt="Drawing" width="200px" />
-<img src="https://github.com/ISPWang/WSPSwiftDemo/raw/master/ScreenShots/buttonShareStyle.png" alt="Drawing" width="200px" />
+<img src="https://github.com/ISPWang/WSPSwiftDemo/raw/master/ScreenShots/tableViewSection.png" alt="Drawing" width="375px" />
+<img src="https://github.com/ISPWang/WSPSwiftDemo/raw/master/ScreenShots/playLocalVideo.png" alt="Drawing" width="375px" />
+<img src="https://github.com/ISPWang/WSPSwiftDemo/raw/master/ScreenShots/buttonShareStyle.png" alt="Drawing" width="375px" />
 ---
 
 `项目持续更新 欢迎star`
