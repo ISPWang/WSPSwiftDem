@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var data = ["tableSectionHeader", "timerPlayOrPause", "CustomerChangeFont", "PlayLocalVideo", "ChatVideoMenuViewController", "ShareStyle", "PhottoEffect", "PullToRefreshController", "RandomGradientColorMusic"]
+    var data = ["tableSectionHeader", "timerPlayOrPause", "CustomerChangeFont", "PlayLocalVideo", "ChatVideoMenuViewController", "ShareStyle", "PhottoEffect", "PullToRefreshController", "RandomGradientColorMusic", "ImageZoomView"]
     
     var showTable: UITableView?
     
@@ -42,12 +42,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
+        setUpControllers(indexPath)
+        
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        print("view appled \(__FUNCTION__)")
+        
+    }
+    // MARK: - 初始化跳转视图
+    private func setUpControllers(indexPath: NSIndexPath) {
         if indexPath.row == 0 {
             let controllrt = ECGMineViewController();
             self.navigationController!.pushViewController(controllrt, animated: true)
-            tableView.deselectRowAtIndexPath(indexPath, animated: true)
         } else if indexPath.row == 1 {
-           performSegueWithIdentifier("Demo1ViewControllerIdentifier", sender: nil)
+            performSegueWithIdentifier("Demo1ViewControllerIdentifier", sender: nil)
         } else if indexPath.row == 2 {
             performSegueWithIdentifier("ChangeFontViewControllerIdentifier", sender: nil)
         } else if indexPath.row == 3 {
@@ -56,23 +66,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             performSegueWithIdentifier("ChatVideoMenuIdentifier", sender: nil)
         } else if indexPath.row == 5 {
             let styleDemo = ShareStyleDemoViewController()
+            styleDemo.title = data[indexPath.row]
             self.navigationController?.pushViewController(styleDemo, animated: true)
         } else if indexPath.row == 6 {
             print("Log\(indexPath)")
             performSegueWithIdentifier("PhotoEffectIdentifier", sender: nil)
         } else if indexPath.row == 7 {
             let pullRefresh = PullToRefreshController()
+            pullRefresh.title = data[indexPath.row]
             self.navigationController!.pushViewController(pullRefresh, animated: true)
         } else if indexPath.row == 8 {
             performSegueWithIdentifier("RandomGradientMusicIndentifier", sender: nil)
+        } else if indexPath.row == 9 {
+            let imageViewZoomVC = ImageZoomViewController()
+            imageViewZoomVC.title = data[indexPath.row]
+            self.navigationController!.pushViewController(imageViewZoomVC, animated: true)
         }
-        
-    }
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        print("view appled \(__FUNCTION__)")
-        
     }
     
     

@@ -44,6 +44,7 @@
 		C94BC3101C853E8A00C79FDB /* Demo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94BC2FC1C853E8A00C79FDB /* Demo1ViewController.swift */; };
 		C94BC3121C85430800C79FDB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94BC3111C85430800C79FDB /* ImageIO.framework */; };
 		C94BC3141C85430E00C79FDB /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C94BC3131C85430E00C79FDB /* libSDWebImage.a */; };
+		C965C4841C92AB0300007AF9 /* ImageZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965C4831C92AB0300007AF9 /* ImageZoomViewController.swift */; };
 		C9B10EE21C60B2C7007F3C8A /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B10ED31C60B2C7007F3C8A /* Constraint.swift */; };
 		C9B10EE31C60B2C7007F3C8A /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B10ED41C60B2C7007F3C8A /* ConstraintAttributes.swift */; };
 		C9B10EE41C60B2C7007F3C8A /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B10ED51C60B2C7007F3C8A /* ConstraintDescription.swift */; };
@@ -124,6 +125,7 @@
 		C94BC2FC1C853E8A00C79FDB /* Demo1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo1ViewController.swift; sourceTree = "<group>"; };
 		C94BC3111C85430800C79FDB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		C94BC3131C85430E00C79FDB /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "Pods/../build/Debug-iphoneos/libSDWebImage.a"; sourceTree = "<group>"; };
+		C965C4831C92AB0300007AF9 /* ImageZoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageZoomViewController.swift; sourceTree = "<group>"; };
 		C9B10ECE1C60B0D7007F3C8A /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "Pods/../build/Debug-iphoneos/SDWebImage.framework"; sourceTree = "<group>"; };
 		C9B10ED01C60B11A007F3C8A /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "Pods/../build/Debug-iphoneos/SnapKit.framework"; sourceTree = "<group>"; };
 		C9B10ED31C60B2C7007F3C8A /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 		C94354441C472D64003C4B8D /* swiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C965C4821C92AAEC00007AF9 /* imageViewZoomDemo */,
 				C94560A01C8FFF4500B0DD11 /* RandomGradientColorMusic */,
 				C9F56B021C8D68250009D557 /* pullToRefresh */,
 				C93E75C51C880CED006916FB /* PhottoEffect */,
@@ -355,6 +358,14 @@
 				C94BC2FC1C853E8A00C79FDB /* Demo1ViewController.swift */,
 			);
 			path = TimerPlayOrPause;
+			sourceTree = "<group>";
+		};
+		C965C4821C92AAEC00007AF9 /* imageViewZoomDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C965C4831C92AB0300007AF9 /* ImageZoomViewController.swift */,
+			);
+			path = imageViewZoomDemo;
 			sourceTree = "<group>";
 		};
 		C9B10ED21C60B2C7007F3C8A /* SnapKit */ = {
@@ -601,6 +612,7 @@
 				C93E75CB1C8816C3006916FB /* InsertClass.swift in Sources */,
 				C9B10EEB1C60B2C7007F3C8A /* LayoutConstraint.swift in Sources */,
 				C9B10EE91C60B2C7007F3C8A /* EdgeInsets.swift in Sources */,
+				C965C4841C92AB0300007AF9 /* ImageZoomViewController.swift in Sources */,
 				C94BC3041C853E8A00C79FDB /* hekllo.m in Sources */,
 				C9474FE71C86CBB100CFADA0 /* ShareStyleDemoViewController.swift in Sources */,
 				C94560A41C8FFF7F00B0DD11 /* RandomGradientMusicController.swift in Sources */,
