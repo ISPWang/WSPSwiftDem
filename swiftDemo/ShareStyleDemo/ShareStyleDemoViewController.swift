@@ -59,6 +59,7 @@ class ShareStyleDemoViewController: UIViewController, CircleMenuDelegate {
         print("button did selected: \(atIndex)")
     }
     
+    
 
     /*
     // MARK: - Navigation

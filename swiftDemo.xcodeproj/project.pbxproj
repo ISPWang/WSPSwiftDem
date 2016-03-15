@@ -44,7 +44,12 @@
 		C94BC3101C853E8A00C79FDB /* Demo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94BC2FC1C853E8A00C79FDB /* Demo1ViewController.swift */; };
 		C94BC3121C85430800C79FDB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94BC3111C85430800C79FDB /* ImageIO.framework */; };
 		C94BC3141C85430E00C79FDB /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C94BC3131C85430E00C79FDB /* libSDWebImage.a */; };
+		C9533B8D1C9807A20045FAB2 /* moments.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C9533B8C1C9807A20045FAB2 /* moments.mp4 */; };
+		C9533B8F1C9808410045FAB2 /* SpotifyVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9533B8E1C9808410045FAB2 /* SpotifyVideoViewController.swift */; };
+		C9533B911C980BA20045FAB2 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9533B901C980BA20045FAB2 /* VideoPlayerViewController.swift */; };
+		C9533B931C980D470045FAB2 /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9533B921C980D470045FAB2 /* VideoCutter.swift */; };
 		C965C4841C92AB0300007AF9 /* ImageZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965C4831C92AB0300007AF9 /* ImageZoomViewController.swift */; };
+		C965C4861C92BF0400007AF9 /* touchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965C4851C92BF0400007AF9 /* touchImageView.swift */; };
 		C9B10EE21C60B2C7007F3C8A /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B10ED31C60B2C7007F3C8A /* Constraint.swift */; };
 		C9B10EE31C60B2C7007F3C8A /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B10ED41C60B2C7007F3C8A /* ConstraintAttributes.swift */; };
 		C9B10EE41C60B2C7007F3C8A /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B10ED51C60B2C7007F3C8A /* ConstraintDescription.swift */; };
@@ -125,7 +130,12 @@
 		C94BC2FC1C853E8A00C79FDB /* Demo1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo1ViewController.swift; sourceTree = "<group>"; };
 		C94BC3111C85430800C79FDB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		C94BC3131C85430E00C79FDB /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "Pods/../build/Debug-iphoneos/libSDWebImage.a"; sourceTree = "<group>"; };
+		C9533B8C1C9807A20045FAB2 /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
+		C9533B8E1C9808410045FAB2 /* SpotifyVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyVideoViewController.swift; sourceTree = "<group>"; };
+		C9533B901C980BA20045FAB2 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		C9533B921C980D470045FAB2 /* VideoCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCutter.swift; sourceTree = "<group>"; };
 		C965C4831C92AB0300007AF9 /* ImageZoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageZoomViewController.swift; sourceTree = "<group>"; };
+		C965C4851C92BF0400007AF9 /* touchImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = touchImageView.swift; sourceTree = "<group>"; };
 		C9B10ECE1C60B0D7007F3C8A /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "Pods/../build/Debug-iphoneos/SDWebImage.framework"; sourceTree = "<group>"; };
 		C9B10ED01C60B11A007F3C8A /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "Pods/../build/Debug-iphoneos/SnapKit.framework"; sourceTree = "<group>"; };
 		C9B10ED31C60B2C7007F3C8A /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
@@ -230,6 +240,7 @@
 		C94354441C472D64003C4B8D /* swiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C9533B8B1C98078B0045FAB2 /* SpotifyVideoBackground */,
 				C965C4821C92AAEC00007AF9 /* imageViewZoomDemo */,
 				C94560A01C8FFF4500B0DD11 /* RandomGradientColorMusic */,
 				C9F56B021C8D68250009D557 /* pullToRefresh */,
@@ -360,10 +371,22 @@
 			path = TimerPlayOrPause;
 			sourceTree = "<group>";
 		};
+		C9533B8B1C98078B0045FAB2 /* SpotifyVideoBackground */ = {
+			isa = PBXGroup;
+			children = (
+				C9533B8C1C9807A20045FAB2 /* moments.mp4 */,
+				C9533B8E1C9808410045FAB2 /* SpotifyVideoViewController.swift */,
+				C9533B901C980BA20045FAB2 /* VideoPlayerViewController.swift */,
+				C9533B921C980D470045FAB2 /* VideoCutter.swift */,
+			);
+			path = SpotifyVideoBackground;
+			sourceTree = "<group>";
+		};
 		C965C4821C92AAEC00007AF9 /* imageViewZoomDemo */ = {
 			isa = PBXGroup;
 			children = (
 				C965C4831C92AB0300007AF9 /* ImageZoomViewController.swift */,
+				C965C4851C92BF0400007AF9 /* touchImageView.swift */,
 			);
 			path = imageViewZoomDemo;
 			sourceTree = "<group>";
@@ -513,6 +536,7 @@
 				C94BC3081C853E8A00C79FDB /* Main.storyboard in Resources */,
 				C94560A21C8FFF4500B0DD11 /* Ecstasy.mp3 in Resources */,
 				C94BC2FF1C853E8A00C79FDB /* Gaspar Regular.otf in Resources */,
+				C9533B8D1C9807A20045FAB2 /* moments.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,10 +622,12 @@
 				C9B10EE81C60B2C7007F3C8A /* Debugging.swift in Sources */,
 				C94BC30F1C853E8A00C79FDB /* ECGSettingItem.swift in Sources */,
 				C9B10EE31C60B2C7007F3C8A /* ConstraintAttributes.swift in Sources */,
+				C9533B911C980BA20045FAB2 /* VideoPlayerViewController.swift in Sources */,
 				C94BC3051C853E8A00C79FDB /* ViewController.swift in Sources */,
 				C94BC3101C853E8A00C79FDB /* Demo1ViewController.swift in Sources */,
 				C9B10EEF1C60B2C7007F3C8A /* ViewController+SnapKit.swift in Sources */,
 				C9474FE41C86839400CFADA0 /* CameraViewController.swift in Sources */,
+				C965C4861C92BF0400007AF9 /* touchImageView.swift in Sources */,
 				C94BC30A1C853E8A00C79FDB /* ECGBaseSettingViewController.swift in Sources */,
 				C9B10EE61C60B2C7007F3C8A /* ConstraintMaker.swift in Sources */,
 				C9474FE21C86838700CFADA0 /* RightViewController.swift in Sources */,
@@ -619,9 +645,11 @@
 				C9B10EE41C60B2C7007F3C8A /* ConstraintDescription.swift in Sources */,
 				C94BC30D1C853E8A00C79FDB /* ECGMineViewController.swift in Sources */,
 				C94BC30B1C853E8A00C79FDB /* ECGBaseViewController.swift in Sources */,
+				C9533B931C980D470045FAB2 /* VideoCutter.swift in Sources */,
 				C9474FDE1C86837000CFADA0 /* ChatVideoMenuViewController.swift in Sources */,
 				C94BC30E1C853E8A00C79FDB /* ECGSettingGroup.swift in Sources */,
 				C94BC30C1C853E8A00C79FDB /* ECGMineSettingCell.swift in Sources */,
+				C9533B8F1C9808410045FAB2 /* SpotifyVideoViewController.swift in Sources */,
 				C9F56B041C8D68540009D557 /* PullToRefreshController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

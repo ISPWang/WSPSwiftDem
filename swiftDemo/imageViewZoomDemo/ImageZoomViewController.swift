@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ImageZoomViewController: UIViewController, UIScrollViewDelegate {
+class ImageZoomViewController: UIViewController, UIScrollViewDelegate, touchImageViewDelegate {
 
     
-    var imageView: UIImageView!
+    var imageView: touchImageView!
     var scrollView: UIScrollView!
     
     override func viewDidLoad() {
@@ -19,8 +19,10 @@ class ImageZoomViewController: UIViewController, UIScrollViewDelegate {
         
         // Do any additional setup after loading the view.
         view.backgroundColor = UIColor.whiteColor()
-        imageView = UIImageView(image: UIImage(named: "hello"))
+        imageView = touchImageView(image: UIImage(named: "hello"))
         imageView.userInteractionEnabled = true
+        
+        imageView.delegate = self
         
         setupScrollView()
         
@@ -110,7 +112,11 @@ class ImageZoomViewController: UIViewController, UIScrollViewDelegate {
         super.touchesBegan(touches, withEvent: event)
         print("开始")
     }
-
+    
+    
+    func tapClick() {
+        recenterImage()
+    }
     /*
     // MARK: - Navigation
 

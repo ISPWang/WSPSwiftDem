@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -27,6 +28,7 @@
                         <segue destination="7fs-A3-YMP" kind="show" identifier="ChatVideoMenuIdentifier" id="TJ9-XB-251"/>
                         <segue destination="N6H-zI-ZkB" kind="show" identifier="PhotoEffectIdentifier" id="jWc-QN-DdZ"/>
                         <segue destination="4ef-Jz-zAT" kind="show" identifier="RandomGradientMusicIndentifier" id="XGX-wl-1Yz"/>
+                        <segue destination="7ha-o7-uH9" kind="show" identifier="SpotifyVideoIdentifier" id="15Z-DC-syq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -490,6 +492,67 @@
             </objects>
             <point key="canvasLocation" x="1170" y="2107"/>
         </scene>
+        <!--Spotify Video View Controller-->
+        <scene sceneID="XSx-R9-F36">
+            <objects>
+                <viewController id="7ha-o7-uH9" customClass="SpotifyVideoViewController" customModule="swiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="feh-m3-sGV"/>
+                        <viewControllerLayoutGuide type="bottom" id="8bi-To-sgp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ALU-wJ-7YB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-secondary-logo" translatesAutoresizingMaskIntoConstraints="NO" id="yIp-5Y-3Pc">
+                                <rect key="frame" x="191" y="140" width="218" height="66"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2t-DN-JSh">
+                                <rect key="frame" x="48" y="460" width="504" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.71764705882352942" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="CwZ-Ns-JcQ"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4E-Ux-35J">
+                                <rect key="frame" x="48" y="525" width="504" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="sign Up">
+                                    <color key="titleColor" red="0.0" green="0.71764705880000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r2t-DN-JSh" firstAttribute="leading" secondItem="ALU-wJ-7YB" secondAttribute="leadingMargin" constant="28" id="AuG-4g-iLU"/>
+                            <constraint firstItem="r2t-DN-JSh" firstAttribute="centerX" secondItem="ALU-wJ-7YB" secondAttribute="centerX" id="MO1-Vp-OIL"/>
+                            <constraint firstItem="yIp-5Y-3Pc" firstAttribute="centerY" secondItem="ALU-wJ-7YB" secondAttribute="centerY" id="Xbr-JW-Oii"/>
+                            <constraint firstItem="Y4E-Ux-35J" firstAttribute="leading" secondItem="ALU-wJ-7YB" secondAttribute="leadingMargin" constant="28" id="ZhF-DO-Urf"/>
+                            <constraint firstItem="Y4E-Ux-35J" firstAttribute="height" secondItem="r2t-DN-JSh" secondAttribute="height" id="aFr-xa-c28"/>
+                            <constraint firstItem="yIp-5Y-3Pc" firstAttribute="centerX" secondItem="ALU-wJ-7YB" secondAttribute="centerX" id="dy5-bI-GNc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y4E-Ux-35J" secondAttribute="trailing" constant="28" id="omy-w4-j5X"/>
+                            <constraint firstItem="8bi-To-sgp" firstAttribute="top" secondItem="Y4E-Ux-35J" secondAttribute="bottom" constant="30" id="qJZ-Oq-VMl"/>
+                            <constraint firstItem="Y4E-Ux-35J" firstAttribute="top" secondItem="r2t-DN-JSh" secondAttribute="bottom" constant="20" id="qya-oo-Wtm"/>
+                            <constraint firstItem="yIp-5Y-3Pc" firstAttribute="top" secondItem="ALU-wJ-7YB" secondAttribute="topMargin" constant="140" id="sX7-fd-0Xi"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Xbr-JW-Oii"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="r2t-DN-JSh" id="LB8-2h-rmr"/>
+                        <outlet property="signUpButton" destination="Y4E-Ux-35J" id="ssD-6i-5ax"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M5u-hB-XkN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170" y="2787"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Lc-Kh-AIl">
             <objects>
@@ -512,6 +575,7 @@
     <resources>
         <image name="blue" width="375" height="667"/>
         <image name="bodyline" width="596" height="595"/>
+        <image name="login-secondary-logo" width="218" height="66"/>
         <image name="music play" width="148" height="148"/>
         <image name="playBtn" width="60" height="60"/>
         <image name="videoScreenshot01" width="375" height="220"/>

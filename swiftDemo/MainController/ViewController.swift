@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var data = ["tableSectionHeader", "timerPlayOrPause", "CustomerChangeFont", "PlayLocalVideo", "ChatVideoMenuViewController", "ShareStyle", "PhottoEffect", "PullToRefreshController", "RandomGradientColorMusic", "ImageZoomView"]
+    var data = ["tableSectionHeader", "timerPlayOrPause", "CustomerChangeFont", "PlayLocalVideo", "ChatVideoMenuViewController", "ShareStyle", "PhottoEffect", "PullToRefreshController", "RandomGradientColorMusic", "ImageZoomView", "SpotifyVideoBackground"]
     
     var showTable: UITableView?
     
@@ -81,6 +81,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let imageViewZoomVC = ImageZoomViewController()
             imageViewZoomVC.title = data[indexPath.row]
             self.navigationController!.pushViewController(imageViewZoomVC, animated: true)
+        } else if indexPath.row == 10 {
+            performSegueWithIdentifier("SpotifyVideoIdentifier", sender: nil)
         }
     }
     
