@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -40,22 +41,24 @@
         <scene sceneID="jxV-Qg-eYa">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Blc-0C-b35" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="fDB-Hi-33m" customClass="WSPNavigationDelegate" customModule="swiftDemo" customModuleProvider="target"/>
                 <navigationController navigationBarHidden="YES" id="L59-6D-h5a" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="i2j-xY-8Xj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
+                        <outlet property="delegate" destination="fDB-Hi-33m" id="OzK-aN-tNR"/>
                         <segue destination="xZW-8n-vJu" kind="relationship" relationship="rootViewController" id="Vae-Au-Hav"/>
                     </connections>
                 </navigationController>
             </objects>
             <point key="canvasLocation" x="-1288" y="1663"/>
         </scene>
-        <!--View Controller-->
+        <!--Transition View Controller-->
         <scene sceneID="MNR-qt-DSi">
             <objects>
-                <viewController id="xZW-8n-vJu" sceneMemberID="viewController">
+                <viewController id="xZW-8n-vJu" customClass="TransitionViewController" customModule="swiftDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RT9-b5-EDC"/>
                         <viewControllerLayoutGuide type="bottom" id="hyb-40-HcW"/>
@@ -71,11 +74,16 @@
                                     <constraint firstAttribute="width" constant="44" id="DZa-Zw-3FF"/>
                                     <constraint firstAttribute="height" constant="44" id="mow-FK-0jN"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="返回"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="22"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnDismis:" destination="xZW-8n-vJu" eventType="touchUpInside" id="NWo-7O-Jgi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhz-Jg-dP1">
                                 <rect key="frame" x="536" y="40" width="44" height="44"/>
@@ -93,25 +101,37 @@
                                     <segue destination="VDc-Lq-9MA" kind="show" id="bor-QO-iVy"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hhhhh" translatesAutoresizingMaskIntoConstraints="NO" id="pJA-cz-riG">
+                                <rect key="frame" x="90" y="142.5" width="420" height="315"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pJA-cz-riG" secondAttribute="height" multiplier="600:450" id="aHV-hw-pCb"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.71764705880000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gYF-Ku-nDd" firstAttribute="top" secondItem="RT9-b5-EDC" secondAttribute="bottom" constant="20" id="1Sc-ph-Yfc"/>
+                            <constraint firstItem="pJA-cz-riG" firstAttribute="leading" secondItem="hqX-3F-gUi" secondAttribute="leadingMargin" constant="70" id="K3y-cn-t3F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pJA-cz-riG" secondAttribute="trailing" constant="70" id="eyd-Xl-XKE"/>
+                            <constraint firstItem="pJA-cz-riG" firstAttribute="centerY" secondItem="hqX-3F-gUi" secondAttribute="centerY" id="iFS-Os-PsJ"/>
                             <constraint firstItem="gYF-Ku-nDd" firstAttribute="leading" secondItem="hqX-3F-gUi" secondAttribute="leading" constant="20" id="my3-6E-etn"/>
                             <constraint firstAttribute="trailing" secondItem="dhz-Jg-dP1" secondAttribute="trailing" constant="20" id="uYl-7c-Gui"/>
                             <constraint firstItem="dhz-Jg-dP1" firstAttribute="top" secondItem="RT9-b5-EDC" secondAttribute="bottom" constant="20" id="ut3-hQ-VKh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9Bg-DC-qv1"/>
+                    <connections>
+                        <outlet property="popBtn" destination="dhz-Jg-dP1" id="4Fe-2W-jFx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOm-V5-tqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-652" y="1663"/>
         </scene>
-        <!--View Controller-->
+        <!--Transition View Controller-->
         <scene sceneID="eXW-4c-G7E">
             <objects>
-                <viewController id="VDc-Lq-9MA" sceneMemberID="viewController">
+                <viewController id="VDc-Lq-9MA" customClass="TransitionViewController" customModule="swiftDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="agq-78-gsE"/>
                         <viewControllerLayoutGuide type="bottom" id="Kkt-FI-XEn"/>
@@ -132,14 +152,35 @@
                                         <integer key="value" value="22"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="popClick:" destination="VDc-Lq-9MA" eventType="touchUpInside" id="gIA-dD-Cni"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bodyline" translatesAutoresizingMaskIntoConstraints="NO" id="C5p-RM-iav">
+                                <rect key="frame" x="90" y="90" width="420" height="420"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="C5p-RM-iav" secondAttribute="height" multiplier="1:1" id="YbD-7p-LS3"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.89597805220000004" blue="0.41473660820000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="QqI-Nt-DuU" secondAttribute="trailing" id="Pjj-QR-p4e"/>
+                            <constraint firstItem="C5p-RM-iav" firstAttribute="centerY" secondItem="cho-Jn-VTt" secondAttribute="centerY" id="23b-fD-zpe"/>
+                            <constraint firstItem="C5p-RM-iav" firstAttribute="leading" secondItem="cho-Jn-VTt" secondAttribute="leadingMargin" constant="70" id="4Vi-cg-WLl"/>
+                            <constraint firstAttribute="trailing" secondItem="QqI-Nt-DuU" secondAttribute="trailing" constant="20" id="Pjj-QR-p4e"/>
+                            <constraint firstItem="C5p-RM-iav" firstAttribute="width" secondItem="C5p-RM-iav" secondAttribute="height" multiplier="63:52" id="e0w-9V-cwy"/>
                             <constraint firstItem="QqI-Nt-DuU" firstAttribute="top" secondItem="agq-78-gsE" secondAttribute="bottom" constant="20" id="gHM-vk-ZfZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C5p-RM-iav" secondAttribute="trailing" constant="70" id="hpX-ku-tb4"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="e0w-9V-cwy"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="popBtn" destination="QqI-Nt-DuU" id="qX6-eQ-nlm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTC-Ss-cwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -685,6 +726,7 @@
     <resources>
         <image name="blue" width="375" height="667"/>
         <image name="bodyline" width="596" height="595"/>
+        <image name="hhhhh" width="300" height="225"/>
         <image name="login-secondary-logo" width="218" height="66"/>
         <image name="music play" width="148" height="148"/>
         <image name="playBtn" width="60" height="60"/>

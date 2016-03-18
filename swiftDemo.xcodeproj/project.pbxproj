@@ -10,6 +10,9 @@
 		89E2FDD10C0341B729E2D3A9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43394BDB3ACD683175E0A5A9 /* Pods.framework */; };
 		C93E39491C9BFCE3008DCB75 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93E39471C9BFCE3008DCB75 /* MBProgressHUD.framework */; };
 		C93E394A1C9BFCE3008DCB75 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93E39481C9BFCE3008DCB75 /* SDWebImage.framework */; };
+		C93E394D1C9C0073008DCB75 /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E394C1C9C0073008DCB75 /* TransitionViewController.swift */; };
+		C93E394F1C9C0176008DCB75 /* WSPNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E394E1C9C0176008DCB75 /* WSPNavigationDelegate.swift */; };
+		C93E39511C9C01D2008DCB75 /* WSPTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E39501C9C01D2008DCB75 /* WSPTransitionAnimator.swift */; };
 		C93E75C71C881681006916FB /* PhotoEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E75C61C881681006916FB /* PhotoEffectViewController.swift */; };
 		C93E75C91C8816AD006916FB /* InsertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E75C81C8816AD006916FB /* InsertCollectionViewCell.swift */; };
 		C93E75CB1C8816C3006916FB /* InsertClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E75CA1C8816C3006916FB /* InsertClass.swift */; };
@@ -89,6 +92,9 @@
 		43394BDB3ACD683175E0A5A9 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93E39471C9BFCE3008DCB75 /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = "Pods/../build/Debug-iphoneos/MBProgressHUD.framework"; sourceTree = "<group>"; };
 		C93E39481C9BFCE3008DCB75 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "Pods/../build/Debug-iphoneos/SDWebImage.framework"; sourceTree = "<group>"; };
+		C93E394C1C9C0073008DCB75 /* TransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
+		C93E394E1C9C0176008DCB75 /* WSPNavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSPNavigationDelegate.swift; sourceTree = "<group>"; };
+		C93E39501C9C01D2008DCB75 /* WSPTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSPTransitionAnimator.swift; sourceTree = "<group>"; };
 		C93E75C61C881681006916FB /* PhotoEffectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoEffectViewController.swift; sourceTree = "<group>"; };
 		C93E75C81C8816AD006916FB /* InsertCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertCollectionViewCell.swift; sourceTree = "<group>"; };
 		C93E75CA1C8816C3006916FB /* InsertClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertClass.swift; sourceTree = "<group>"; };
@@ -209,6 +215,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C93E394B1C9C006B008DCB75 /* TranstionVCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C93E394C1C9C0073008DCB75 /* TransitionViewController.swift */,
+				C93E394E1C9C0176008DCB75 /* WSPNavigationDelegate.swift */,
+				C93E39501C9C01D2008DCB75 /* WSPTransitionAnimator.swift */,
+			);
+			path = TranstionVCDemo;
+			sourceTree = "<group>";
+		};
 		C93E75C51C880CED006916FB /* PhottoEffect */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +260,7 @@
 		C94354441C472D64003C4B8D /* swiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C93E394B1C9C006B008DCB75 /* TranstionVCDemo */,
 				C9533B8B1C98078B0045FAB2 /* SpotifyVideoBackground */,
 				C965C4821C92AAEC00007AF9 /* imageViewZoomDemo */,
 				C94560A01C8FFF4500B0DD11 /* RandomGradientColorMusic */,
@@ -613,6 +630,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93E394D1C9C0073008DCB75 /* TransitionViewController.swift in Sources */,
 				C94BC2DE1C85277200C79FDB /* PlayVedioCell.swift in Sources */,
 				C94BC2FD1C853E8A00C79FDB /* CustomFont.xcdatamodeld in Sources */,
 				C94BC2FE1C853E8A00C79FDB /* Demo2ChangeFontViewController.swift in Sources */,
@@ -623,9 +641,11 @@
 				C93E75C91C8816AD006916FB /* InsertCollectionViewCell.swift in Sources */,
 				C94BC2DC1C85275100C79FDB /* Demo3PlayLocalVedioController.swift in Sources */,
 				C9B10EEE1C60B2C7007F3C8A /* View+SnapKit.swift in Sources */,
+				C93E394F1C9C0176008DCB75 /* WSPNavigationDelegate.swift in Sources */,
 				C9B10EE81C60B2C7007F3C8A /* Debugging.swift in Sources */,
 				C94BC30F1C853E8A00C79FDB /* ECGSettingItem.swift in Sources */,
 				C9B10EE31C60B2C7007F3C8A /* ConstraintAttributes.swift in Sources */,
+				C93E39511C9C01D2008DCB75 /* WSPTransitionAnimator.swift in Sources */,
 				C9533B911C980BA20045FAB2 /* VideoPlayerViewController.swift in Sources */,
 				C94BC3051C853E8A00C79FDB /* ViewController.swift in Sources */,
 				C94BC3101C853E8A00C79FDB /* Demo1ViewController.swift in Sources */,
