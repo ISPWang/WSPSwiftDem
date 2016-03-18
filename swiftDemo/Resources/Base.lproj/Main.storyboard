@@ -29,11 +29,121 @@
                         <segue destination="N6H-zI-ZkB" kind="show" identifier="PhotoEffectIdentifier" id="jWc-QN-DdZ"/>
                         <segue destination="4ef-Jz-zAT" kind="show" identifier="RandomGradientMusicIndentifier" id="XGX-wl-1Yz"/>
                         <segue destination="7ha-o7-uH9" kind="show" identifier="SpotifyVideoIdentifier" id="15Z-DC-syq"/>
+                        <segue destination="L59-6D-h5a" kind="presentation" identifier="TransIdentifier" id="jlg-go-yc1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-586" y="881"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jxV-Qg-eYa">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Blc-0C-b35" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController navigationBarHidden="YES" id="L59-6D-h5a" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i2j-xY-8Xj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xZW-8n-vJu" kind="relationship" relationship="rootViewController" id="Vae-Au-Hav"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-1288" y="1663"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MNR-qt-DSi">
+            <objects>
+                <viewController id="xZW-8n-vJu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RT9-b5-EDC"/>
+                        <viewControllerLayoutGuide type="bottom" id="hyb-40-HcW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hqX-3F-gUi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYF-Ku-nDd">
+                                <rect key="frame" x="20" y="40" width="44" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="DZa-Zw-3FF"/>
+                                    <constraint firstAttribute="height" constant="44" id="mow-FK-0jN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhz-Jg-dP1">
+                                <rect key="frame" x="536" y="40" width="44" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="InW-Uz-3Mn"/>
+                                    <constraint firstAttribute="width" constant="44" id="grh-fY-4dV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="VDc-Lq-9MA" kind="show" id="bor-QO-iVy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.71764705880000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gYF-Ku-nDd" firstAttribute="top" secondItem="RT9-b5-EDC" secondAttribute="bottom" constant="20" id="1Sc-ph-Yfc"/>
+                            <constraint firstItem="gYF-Ku-nDd" firstAttribute="leading" secondItem="hqX-3F-gUi" secondAttribute="leading" constant="20" id="my3-6E-etn"/>
+                            <constraint firstAttribute="trailing" secondItem="dhz-Jg-dP1" secondAttribute="trailing" constant="20" id="uYl-7c-Gui"/>
+                            <constraint firstItem="dhz-Jg-dP1" firstAttribute="top" secondItem="RT9-b5-EDC" secondAttribute="bottom" constant="20" id="ut3-hQ-VKh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Bg-DC-qv1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vOm-V5-tqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-652" y="1663"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eXW-4c-G7E">
+            <objects>
+                <viewController id="VDc-Lq-9MA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="agq-78-gsE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kkt-FI-XEn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cho-Jn-VTt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqI-Nt-DuU">
+                                <rect key="frame" x="536" y="40" width="44" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="7Bs-zL-MfD"/>
+                                    <constraint firstAttribute="height" constant="44" id="lGP-Cd-jr5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.89597805220000004" blue="0.41473660820000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="QqI-Nt-DuU" secondAttribute="trailing" id="Pjj-QR-p4e"/>
+                            <constraint firstItem="QqI-Nt-DuU" firstAttribute="top" secondItem="agq-78-gsE" secondAttribute="bottom" constant="20" id="gHM-vk-ZfZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uTC-Ss-cwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-652" y="2411"/>
         </scene>
         <!--Demo1 View Controller-->
         <scene sceneID="bPE-FU-9u6">
