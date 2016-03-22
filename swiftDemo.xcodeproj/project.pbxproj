@@ -68,6 +68,7 @@
 		C9B10EEE1C60B2C7007F3C8A /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B10EE01C60B2C7007F3C8A /* View+SnapKit.swift */; };
 		C9B10EEF1C60B2C7007F3C8A /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B10EE11C60B2C7007F3C8A /* ViewController+SnapKit.swift */; };
 		C9F56B041C8D68540009D557 /* PullToRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F56B031C8D68540009D557 /* PullToRefreshController.swift */; };
+		C9F85AF21C9FE9BF00AC17A1 /* WSPAnimatedTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F85AF11C9FE9BF00AC17A1 /* WSPAnimatedTextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +162,7 @@
 		C9B10EE01C60B2C7007F3C8A /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
 		C9B10EE11C60B2C7007F3C8A /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
 		C9F56B031C8D68540009D557 /* PullToRefreshController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefreshController.swift; sourceTree = "<group>"; };
+		C9F85AF11C9FE9BF00AC17A1 /* WSPAnimatedTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSPAnimatedTextViewController.swift; sourceTree = "<group>"; };
 		D0821EF2DFA7373D4FE191C8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -398,6 +400,7 @@
 				C9533B8C1C9807A20045FAB2 /* moments.mp4 */,
 				C9533B8E1C9808410045FAB2 /* SpotifyVideoViewController.swift */,
 				C9533B901C980BA20045FAB2 /* VideoPlayerViewController.swift */,
+				C9F85AF11C9FE9BF00AC17A1 /* WSPAnimatedTextViewController.swift */,
 				C9533B921C980D470045FAB2 /* VideoCutter.swift */,
 			);
 			path = SpotifyVideoBackground;
@@ -675,6 +678,7 @@
 				C94BC30C1C853E8A00C79FDB /* ECGMineSettingCell.swift in Sources */,
 				C9533B8F1C9808410045FAB2 /* SpotifyVideoViewController.swift in Sources */,
 				C9F56B041C8D68540009D557 /* PullToRefreshController.swift in Sources */,
+				C9F85AF21C9FE9BF00AC17A1 /* WSPAnimatedTextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

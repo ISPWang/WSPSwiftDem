@@ -27,7 +27,7 @@ class SpotifyVideoViewController: VideoPlayerViewController {
         loginButton.bringSubviewToFront(view)
         signUpButton.bringSubviewToFront(view)
         
-        loginButton.addTarget(self, action: Selector("loginBtn"), forControlEvents: .TouchUpInside)
+//        loginButton.addTarget(self, action: Selector("loginBtn"), forControlEvents: .TouchUpInside)
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,6 +37,7 @@ class SpotifyVideoViewController: VideoPlayerViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
 //        setupVideoBackground()
+        self.navigationController?.navigationBar.hidden = false
     }
     
     func loginBtn() {
