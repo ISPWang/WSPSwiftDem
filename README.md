@@ -11,8 +11,9 @@
 <img src="https://github.com/ISPWang/WSPSwiftDemo/raw/master/ScreenShots/buttonShareStyle.png" alt="Drawing" width="375px" />
 ---
 >带动画的登录注册文本框和按钮样式 <br /><br />
-> 主要code
-```OBJectiveC
+##### 主要code
+
+```obj-c
 // 约束改变加载动画
 UIView.animateWithDuration(0.5, delay: 0.0, options: .CurveEaseOut, animations: { () -> Void in
 
