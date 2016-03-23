@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var data = ["tableSectionHeader", "timerPlayOrPause", "CustomerChangeFont", "PlayLocalVideo", "ChatVideoMenuViewController", "ShareStyle", "PhottoEffect", "PullToRefreshController", "RandomGradientColorMusic", "ImageZoomView", "SpotifyVideoBackground", "TransViewController"]
+    var data = ["tableSectionHeader", "timerPlayOrPause", "CustomerChangeFont", "PlayLocalVideo", "ChatVideoMenuViewController", "ShareStyle", "PhottoEffect", "PullToRefreshController", "RandomGradientColorMusic", "ImageZoomView", "SpotifyVideoBackground", "TransViewController", "TableViewCellAnimationIdentifier"]
     
     var showTable: UITableView?
     
@@ -47,9 +47,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
-        print("view appled \(__FUNCTION__)")
-        
+          
     }
     // MARK: - 初始化跳转视图
     private func setUpControllers(indexPath: NSIndexPath) {
@@ -85,6 +83,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             performSegueWithIdentifier("SpotifyVideoIdentifier", sender: nil)
         } else if indexPath.row == 11 {
             performSegueWithIdentifier("TransIdentifier", sender: nil)
+        } else if indexPath.row == 12 {
+            performSegueWithIdentifier("TableViewCellAnimationIdentifier", sender: nil)
         }
     }
     

@@ -30,7 +30,7 @@ self.loginBtn.enabled = false
 }, completion: nil)
 ```
 
-![图片样式](https://github.com/ISPWang/WSPSwiftDemo/raw/master/ScreenShots/animationLogin.gif)
+<img src="https://github.com/ISPWang/WSPSwiftDemo/raw/master/ScreenShots/animationLogin.gif" alt="Drawing" width="375px" />
 
 
 `项目持续更新 欢迎star`

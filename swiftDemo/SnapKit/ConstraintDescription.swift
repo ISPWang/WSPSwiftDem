@@ -192,29 +192,29 @@ public class ConstraintDescriptionRelatable {
         self.backing = backing
     }
     
-    public func equalTo(other: RelationTarget, file: String = __FILE__, line: UInt = __LINE__) -> ConstraintDescriptionEditable {
+    public func equalTo(other: RelationTarget, file: String = #file, line: UInt = #line) -> ConstraintDescriptionEditable {
         let location = SourceLocation(file: file, line: line)
         return ConstraintDescriptionEditable(self.backing.constrainTo(other, relation: .Equal, location: location))
     }
-    public func equalTo(other: LayoutSupport, file: String = __FILE__, line: UInt = __LINE__) -> ConstraintDescriptionEditable {
+    public func equalTo(other: LayoutSupport, file: String = #file, line: UInt = #line) -> ConstraintDescriptionEditable {
         let location = SourceLocation(file: file, line: line)
         return ConstraintDescriptionEditable(self.backing.constrainTo(other, relation: .Equal, location: location))
     }
     
-    public func lessThanOrEqualTo(other: RelationTarget, file: String = __FILE__, line: UInt = __LINE__) -> ConstraintDescriptionEditable {
+    public func lessThanOrEqualTo(other: RelationTarget, file: String = #file, line: UInt = #line) -> ConstraintDescriptionEditable {
         let location = SourceLocation(file: file, line: line)
         return ConstraintDescriptionEditable(self.backing.constrainTo(other, relation: .LessThanOrEqualTo, location: location))
     }
-    public func lessThanOrEqualTo(other: LayoutSupport, file: String = __FILE__, line: UInt = __LINE__) -> ConstraintDescriptionEditable {
+    public func lessThanOrEqualTo(other: LayoutSupport, file: String = #file, line: UInt = #line) -> ConstraintDescriptionEditable {
         let location = SourceLocation(file: file, line: line)
         return ConstraintDescriptionEditable(self.backing.constrainTo(other, relation: .LessThanOrEqualTo, location: location))
     }
     
-    public func greaterThanOrEqualTo(other: RelationTarget, file: String = __FILE__, line: UInt = __LINE__) -> ConstraintDescriptionEditable {
+    public func greaterThanOrEqualTo(other: RelationTarget, file: String = #file, line: UInt = #line) -> ConstraintDescriptionEditable {
         let location = SourceLocation(file: file, line: line)
         return ConstraintDescriptionEditable(self.backing.constrainTo(other, relation: .GreaterThanOrEqualTo, location: location))
     }
-    public func greaterThanOrEqualTo(other: LayoutSupport, file: String = __FILE__, line: UInt = __LINE__) -> ConstraintDescriptionEditable {
+    public func greaterThanOrEqualTo(other: LayoutSupport, file: String = #file, line: UInt = #line) -> ConstraintDescriptionEditable {
         let location = SourceLocation(file: file, line: line)
         return ConstraintDescriptionEditable(self.backing.constrainTo(other, relation: .GreaterThanOrEqualTo, location: location))
     }

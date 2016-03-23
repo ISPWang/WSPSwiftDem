@@ -23,7 +23,7 @@ class WSPNavigationDelegate: NSObject, UINavigationControllerDelegate {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-        let panGesture = UIPanGestureRecognizer(target: self, action: Selector("panned:"))
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(WSPNavigationDelegate.panned(_:)))
         self.navigationController.view.addGestureRecognizer(panGesture)
     }
     

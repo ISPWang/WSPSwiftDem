@@ -41,7 +41,7 @@ class RandomGradientMusicController: UIViewController {
             print(audioError)
         }
         
-        /*let timer =*/ NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "randomColor", userInfo: nil, repeats: true)
+        /*let timer =*/ NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: #selector(RandomGradientMusicController.randomColor), userInfo: nil, repeats: true)
         
         let redValue = CGFloat(drand48()) // 取随机
         let blueValue =  CGFloat(drand48())

@@ -54,6 +54,10 @@
 		C9533B931C980D470045FAB2 /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9533B921C980D470045FAB2 /* VideoCutter.swift */; };
 		C965C4841C92AB0300007AF9 /* ImageZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965C4831C92AB0300007AF9 /* ImageZoomViewController.swift */; };
 		C965C4861C92BF0400007AF9 /* touchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965C4851C92BF0400007AF9 /* touchImageView.swift */; };
+		C9AF6A351CA26C6B005369F4 /* WSPTableViewAnimatedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AF6A341CA26C6B005369F4 /* WSPTableViewAnimatedController.swift */; };
+		C9AF6A371CA26EB0005369F4 /* FirstTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AF6A361CA26EB0005369F4 /* FirstTableCell.swift */; };
+		C9AF6A391CA27253005369F4 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AF6A381CA27253005369F4 /* SecondTableViewCell.swift */; };
+		C9AF6A3B1CA27267005369F4 /* ShowAnimateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AF6A3A1CA27267005369F4 /* ShowAnimateTableViewController.swift */; };
 		C9B10EE21C60B2C7007F3C8A /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B10ED31C60B2C7007F3C8A /* Constraint.swift */; };
 		C9B10EE31C60B2C7007F3C8A /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B10ED41C60B2C7007F3C8A /* ConstraintAttributes.swift */; };
 		C9B10EE41C60B2C7007F3C8A /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B10ED51C60B2C7007F3C8A /* ConstraintDescription.swift */; };
@@ -145,6 +149,10 @@
 		C9533B921C980D470045FAB2 /* VideoCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCutter.swift; sourceTree = "<group>"; };
 		C965C4831C92AB0300007AF9 /* ImageZoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageZoomViewController.swift; sourceTree = "<group>"; };
 		C965C4851C92BF0400007AF9 /* touchImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = touchImageView.swift; sourceTree = "<group>"; };
+		C9AF6A341CA26C6B005369F4 /* WSPTableViewAnimatedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSPTableViewAnimatedController.swift; sourceTree = "<group>"; };
+		C9AF6A361CA26EB0005369F4 /* FirstTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableCell.swift; sourceTree = "<group>"; };
+		C9AF6A381CA27253005369F4 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		C9AF6A3A1CA27267005369F4 /* ShowAnimateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowAnimateTableViewController.swift; sourceTree = "<group>"; };
 		C9B10ECE1C60B0D7007F3C8A /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "Pods/../build/Debug-iphoneos/SDWebImage.framework"; sourceTree = "<group>"; };
 		C9B10ED01C60B11A007F3C8A /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "Pods/../build/Debug-iphoneos/SnapKit.framework"; sourceTree = "<group>"; };
 		C9B10ED31C60B2C7007F3C8A /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
@@ -262,6 +270,7 @@
 		C94354441C472D64003C4B8D /* swiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C9AF6A331CA26C37005369F4 /* tableViewCellAnimation */,
 				C93E394B1C9C006B008DCB75 /* TranstionVCDemo */,
 				C9533B8B1C98078B0045FAB2 /* SpotifyVideoBackground */,
 				C965C4821C92AAEC00007AF9 /* imageViewZoomDemo */,
@@ -413,6 +422,17 @@
 				C965C4851C92BF0400007AF9 /* touchImageView.swift */,
 			);
 			path = imageViewZoomDemo;
+			sourceTree = "<group>";
+		};
+		C9AF6A331CA26C37005369F4 /* tableViewCellAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C9AF6A341CA26C6B005369F4 /* WSPTableViewAnimatedController.swift */,
+				C9AF6A3A1CA27267005369F4 /* ShowAnimateTableViewController.swift */,
+				C9AF6A361CA26EB0005369F4 /* FirstTableCell.swift */,
+				C9AF6A381CA27253005369F4 /* SecondTableViewCell.swift */,
+			);
+			path = tableViewCellAnimation;
 			sourceTree = "<group>";
 		};
 		C9B10ED21C60B2C7007F3C8A /* SnapKit */ = {
@@ -640,6 +660,7 @@
 				C9B10EE71C60B2C7007F3C8A /* ConstraintRelation.swift in Sources */,
 				C9B10EEC1C60B2C7007F3C8A /* SnapKit.swift in Sources */,
 				C9474FE01C86837E00CFADA0 /* LeftViewController.swift in Sources */,
+				C9AF6A351CA26C6B005369F4 /* WSPTableViewAnimatedController.swift in Sources */,
 				C9B10EE51C60B2C7007F3C8A /* ConstraintItem.swift in Sources */,
 				C93E75C91C8816AD006916FB /* InsertCollectionViewCell.swift in Sources */,
 				C94BC2DC1C85275100C79FDB /* Demo3PlayLocalVedioController.swift in Sources */,
@@ -662,8 +683,11 @@
 				C94BC3031C853E8A00C79FDB /* AppDelegate.swift in Sources */,
 				C9B10EED1C60B2C7007F3C8A /* SourceLocation.swift in Sources */,
 				C9B10EE21C60B2C7007F3C8A /* Constraint.swift in Sources */,
+				C9AF6A3B1CA27267005369F4 /* ShowAnimateTableViewController.swift in Sources */,
 				C93E75CB1C8816C3006916FB /* InsertClass.swift in Sources */,
+				C9AF6A371CA26EB0005369F4 /* FirstTableCell.swift in Sources */,
 				C9B10EEB1C60B2C7007F3C8A /* LayoutConstraint.swift in Sources */,
+				C9AF6A391CA27253005369F4 /* SecondTableViewCell.swift in Sources */,
 				C9B10EE91C60B2C7007F3C8A /* EdgeInsets.swift in Sources */,
 				C965C4841C92AB0300007AF9 /* ImageZoomViewController.swift in Sources */,
 				C94BC3041C853E8A00C79FDB /* hekllo.m in Sources */,

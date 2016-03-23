@@ -36,7 +36,7 @@ class PullToRefreshController: UIViewController, UITableViewDelegate, UITableVie
         emojiTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIndentifier)
         
         tableViewController.refreshControl = self.refreshController
-        self.refreshController.addTarget(self, action: "didRoadEmoji", forControlEvents: .ValueChanged)
+        self.refreshController.addTarget(self, action: #selector(PullToRefreshController.didRoadEmoji), forControlEvents: .ValueChanged)
         
         self.refreshController.backgroundColor = UIColor(red:0.113, green:0.113, blue:0.145, alpha:1)
         let attributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]

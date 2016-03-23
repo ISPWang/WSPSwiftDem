@@ -42,7 +42,7 @@ class Demo1ViewController: UIViewController {
             return
         }
         
-        timer     = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("UpdateTimer"), userInfo: nil, repeats: true)
+        timer     = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(Demo1ViewController.UpdateTimer), userInfo: nil, repeats: true)
         isPlaying = true;
         
     }

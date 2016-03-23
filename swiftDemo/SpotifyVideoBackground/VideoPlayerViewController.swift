@@ -51,7 +51,7 @@ class VideoPlayerViewController: UIViewController {
         didSet {
             if alwaysRepeat {
                 NSNotificationCenter.defaultCenter().addObserver(self,
-                    selector: "playerItemDidReachEnd",
+                    selector: #selector(VideoPlayerViewController.playerItemDidReachEnd),
                     name: AVPlayerItemDidPlayToEndTimeNotification,
                     object: moviePlayer.player?.currentItem)
             }
